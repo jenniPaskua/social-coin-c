@@ -1,5 +1,6 @@
 #import "AppDelegate.h"
 
+#import <Firebase.h>
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
@@ -53,6 +54,10 @@
   [self.window makeKeyAndVisible];
 
   [super application:application didFinishLaunchingWithOptions:launchOptions];
+ 
+ // Add me --- \/
+  [FIRApp configure];
+  // Add me --- /\
 
   return YES;
 }
